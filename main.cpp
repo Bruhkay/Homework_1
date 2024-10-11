@@ -75,6 +75,5 @@ int main() {
     cout << endl;
     SMS.showAllSpacecrafts();
 */
-
     return 0;
 }
