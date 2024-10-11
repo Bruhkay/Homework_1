@@ -4,6 +4,9 @@
 #ifndef SPACEMISSIONMANAGEMENTSYSTEM_H
 #define SPACEMISSIONMANAGEMENTSYSTEM_H
 #include <string>
+
+#include "Mission.h"
+#include "Spacecraft.h"
 using namespace std;
 class SpaceMissionManagementSystem {
 public:
@@ -19,5 +22,9 @@ public:
     void showAllSpacecrafts() const;
     void showMission( const string name ) const;
     void showSpacecraft( const string name ) const;
+private:
+    int originalSize = 50;
+    Spacecraft* spacecrafts;
+    Mission* missions;
 };
 #endif //SPACEMISSIONMANAGEMENTSYSTEM_H

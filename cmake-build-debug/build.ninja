@@ -61,6 +61,18 @@ build CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.obj: CXX_COMPIL
   OBJECT_DIR = CMakeFiles\Homework_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Homework_1.dir
 
+build CMakeFiles/Homework_1.dir/Mission.cpp.obj: CXX_COMPILER__Homework_1_unscanned_Debug C$:/Users/burka/OneDrive/Belgeler/Github/Homework_1/Mission.cpp || cmake_object_order_depends_target_Homework_1
+  DEP_FILE = CMakeFiles\Homework_1.dir\Mission.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Homework_1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Homework_1.dir
+
+build CMakeFiles/Homework_1.dir/Spacecraft.cpp.obj: CXX_COMPILER__Homework_1_unscanned_Debug C$:/Users/burka/OneDrive/Belgeler/Github/Homework_1/Spacecraft.cpp || cmake_object_order_depends_target_Homework_1
+  DEP_FILE = CMakeFiles\Homework_1.dir\Spacecraft.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Homework_1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Homework_1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Homework_1
@@ -69,7 +81,7 @@ build CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.obj: CXX_COMPIL
 #############################################
 # Link the executable Homework_1.exe
 
-build Homework_1.exe: CXX_EXECUTABLE_LINKER__Homework_1_Debug CMakeFiles/Homework_1.dir/main.cpp.obj CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.obj
+build Homework_1.exe: CXX_EXECUTABLE_LINKER__Homework_1_Debug CMakeFiles/Homework_1.dir/main.cpp.obj CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.obj CMakeFiles/Homework_1.dir/Mission.cpp.obj CMakeFiles/Homework_1.dir/Spacecraft.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Homework_1.dir

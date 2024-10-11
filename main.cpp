@@ -29,7 +29,7 @@ int main() {
     cout << endl;
     SMS.showAllSpacecrafts();
     cout << endl;
-    SMS.removeSpacecraft("Hubble");
+    /*SMS.removeSpacecraft("Hubble");
     SMS.removeSpacecraft("Orion");
     cout << endl;
     SMS.showAllSpacecrafts();
@@ -74,5 +74,7 @@ int main() {
     SMS.removeMission("Mars Exploration");
     cout << endl;
     SMS.showAllSpacecrafts();
+*/
+
     return 0;
 }
