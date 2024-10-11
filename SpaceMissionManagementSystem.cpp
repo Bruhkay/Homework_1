@@ -115,14 +115,15 @@ void SpaceMissionManagementSystem::showAllSpacecrafts() const {
     else {
         for(int i = 0; i < originalSize; i++) {
             if(!spacecrafts[i].getName().empty()) {
-                cout << "Spacecraft: "<<spacecrafts[i].getName()<< ", Type: "<< spacecrafts[i].getType() << endl;
+                cout << "Spacecraft: "<<spacecrafts[i].getName()<< ", Type: "<< spacecrafts[i].getType()<< ", Status: "<<
+                    (spacecrafts[i].getIsAvailable() ? "Available" :  "Assigned") << endl;
             }
         }
     }
 }
 
 void SpaceMissionManagementSystem::showMission(const string name) const {
-    
+
 }
 
 void SpaceMissionManagementSystem::showSpacecraft(const string name) const {
