@@ -23,8 +23,10 @@ public:
     void showMission( const string name ) const;
     void showSpacecraft( const string name ) const;
 private:
-    int originalSize = 50;
-    Spacecraft* spacecrafts;
-    Mission* missions;
+    int missionSize = 0;
+    int craftSize = 0;
+    Spacecraft* spacecrafts= new Spacecraft[craftSize]; //CHANGE THIS
+    Mission* missions = new Mission[missionSize];
+
 };
 #endif //SPACEMISSIONMANAGEMENTSYSTEM_H

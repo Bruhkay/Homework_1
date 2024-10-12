@@ -29,12 +29,12 @@ int main() {
     cout << endl;
     SMS.showAllSpacecrafts();
     cout << endl;
-    /*SMS.removeSpacecraft("Hubble");
+    SMS.removeSpacecraft("Hubble");
     SMS.removeSpacecraft("Orion");
     cout << endl;
     SMS.showAllSpacecrafts();
     cout << endl;
-    SMS.assignSpacecraftToMission("Voyager 1", "Mars Exploration");
+    /*SMS.assignSpacecraftToMission("Voyager 1", "Mars Exploration");
     SMS.assignSpacecraftToMission("Voyager 2", "Mars Exploration");
     SMS.assignSpacecraftToMission("Curiosity", "Apollo 11");
     cout << endl;
