@@ -12,6 +12,9 @@ Mission::Mission() {
 void Mission::remove() {
     delete[] spacecrafts;
 }
+Spacecraft Mission::getSpacecrafts(int number) {
+    return spacecrafts[number];
+}
 
 Mission::Mission(string nam, string dat, string destinatio) {
     name = nam;

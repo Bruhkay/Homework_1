@@ -12,6 +12,7 @@ class Mission {
 public:
     Mission();
     void remove();
+    Spacecraft getSpacecrafts(int number);
     Mission(string nam, string dat, string destinatio);
     string getName();
     string getDate();

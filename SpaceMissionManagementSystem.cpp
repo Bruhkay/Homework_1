@@ -203,9 +203,37 @@ void SpaceMissionManagementSystem::showAllSpacecrafts() const {
 }
 
 void SpaceMissionManagementSystem::showMission(const string name) const {
-
+    for(int i = 0; i<missionSize;i++) {
+        if(missions[i].getName() == name) {
+            cout << "Mission: " << name << endl;
+            cout << "  Name: "<< missions[i].getName()<< endl;
+            cout << "  Launch Date: "<< missions[i].getDate()<< endl;
+            cout << "  Destination: "<< missions[i].getDestination()<< endl;
+            cout << "  Assigned Spacecraft:" << endl;
+            for(int j = 0; j<missions[i].getCount();j++) {
+                cout<<"  - "<<missions[i].getSpacecrafts(j).getName()<<endl;
+                // TODO should print none in case
+            }
+        }
+        if(i==missionSize - 1) {
+            cout << "Cannot show mission. Mission "<< name<<" does not exist." << endl;
+        }
+    }
+    if(missionSize == 0) {
+        cout << "Cannot show mission. There is no mission on the system." << endl;
+    }
 }
 
 void SpaceMissionManagementSystem::showSpacecraft(const string name) const {
-
+    if(craftSize==0) {
+        cout<< "There is no spacecraft in the system."<< endl;
+        return;
+    }
+    for (int i = 0; i < craftSize; i++) {
+        if (spacecrafts[i].getName()==name) {
+            cout << "Spacecraft: " << spacecrafts[i].getName() << ", Type: " << spacecrafts[i].getType() <<
+                    ", Status: " <<
+                    (spacecrafts[i].getIsAvailable() ? "Available" : "Assigned") << endl;
+        }
+    }
 }
