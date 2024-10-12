@@ -3,17 +3,20 @@
 //
 
 #include "Mission.h"
+#include <iostream>
 
 #include <algorithm>
 #include <bits/ranges_algo.h>
+using namespace std;
 
 Mission::Mission() {
 }
+
 Mission::Mission(string nam, string dat, string destinatio) {
     name = nam;
     date = dat;
     destination = destinatio;
-    spacecrafts = new Spacecraft[50];
+    spacecrafts = new Spacecraft[0];
 }
 
 string Mission::getName() {
@@ -27,17 +30,37 @@ string Mission::getDate() {
 string Mission::getDestination() {
     return destination;
 }
+
 int Mission::getCount() {
-    int count = 0;
-    for (int i = 0; i < 50; i++) {
-        if(!spacecrafts[i].getName().empty()) {
-            count++;
-        }
-    }
-    return count;
+    return craftSize;
 }
-void Mission::setSpacecraftsAvailable(){
-    for (int i = 0; i < 50; i++) {
+
+void Mission::setSpacecraftsAvailable() {
+    for (int i = 0; i < craftSize; i++) {
         spacecrafts[i].setIsAvailable(true);
     }
 }
+void Mission::addSpacecraft(Spacecraft& spacecraft) {
+    bool isOk = true;
+    for (int i = 0; i < craftSize; i++) {
+        if (spacecrafts[i].getName() == spacecraft.getName()) {
+            cout << "Cannot add spacecraft. Spacecraft " << spacecraft.getName() << " already exists." << endl;
+            isOk = false;
+            break;
+        }
+    }
+    if (isOk) {
+        Spacecraft *newArray = new Spacecraft[craftSize + 1];
+        for (int j = 0; j < craftSize; ++j) {
+            newArray[j] = spacecrafts[j];
+        }
+        delete[] spacecrafts;
+        spacecrafts = newArray;
+        craftSize += 1;
+        spacecrafts[craftSize-1] = spacecraft;
+        cout<< "original: "<<&spacecraft << endl;
+        cout<< "array: "<<&spacecrafts[craftSize-1] << endl; //TODO memory location ayni degil
+        cout << "Assigned spacecraft " << spacecraft.getName() <<" to mission "<< name<< "." << endl;
+    }
+}
+

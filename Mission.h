@@ -15,12 +15,14 @@ public:
     string getName();
     string getDate();
     string getDestination();
+    void addSpacecraft(Spacecraft& spacecraft);
     int getCount();
     void setSpacecraftsAvailable();
 private:
     string name;
     string date;
     string destination;
+    int craftSize=0;
     Spacecraft* spacecrafts;
 };
 #endif //MISSION_H

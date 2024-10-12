@@ -34,7 +34,7 @@ int main() {
     cout << endl;
     SMS.showAllSpacecrafts();
     cout << endl;
-    /*SMS.assignSpacecraftToMission("Voyager 1", "Mars Exploration");
+    SMS.assignSpacecraftToMission("Voyager 1", "Mars Exploration");
     SMS.assignSpacecraftToMission("Voyager 2", "Mars Exploration");
     SMS.assignSpacecraftToMission("Curiosity", "Apollo 11");
     cout << endl;
@@ -54,7 +54,7 @@ int main() {
     cout << endl;
     SMS.showMission("Mars Exploration");
     cout << endl;
-    SMS.dropSpacecraftFromMission("Voyager 1");
+    /*SMS.dropSpacecraftFromMission("Voyager 1");
     SMS.dropSpacecraftFromMission("Orion");
     SMS.dropSpacecraftFromMission("Curiosity");
     SMS.dropSpacecraftFromMission("Voyager 1");

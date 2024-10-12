@@ -3,12 +3,13 @@
 //
 
 #include "SpaceMissionManagementSystem.h"
-
+#include <string>
 #include <iostream>
 #include <ostream>
 
 #include "Mission.h"
 #include "Spacecraft.h"
+using namespace std;
 
 SpaceMissionManagementSystem::SpaceMissionManagementSystem() {
 
@@ -121,7 +122,34 @@ void SpaceMissionManagementSystem::removeSpacecraft(const string name) {
 }
 
 void SpaceMissionManagementSystem::assignSpacecraftToMission(const string spacecraftName, const string missionName) {
-
+    bool isOk = true;
+    for(int i = 0; i<craftSize;i++) {
+        if(spacecrafts[i].getName() == spacecraftName&&isOk) {
+            if(!spacecrafts[i].getIsAvailable()) {
+                //TODO complete the cout
+                cout<<"Cannot assign spacecraft. Spacecraft "<< spacecraftName<<" is already assigned to mission"<< "." << endl;
+                isOk = false;
+            }
+            for(int j = 0; j<missionSize && isOk;j++) {
+                if(missions[j].getName()==missionName) {
+                    spacecrafts[i].setIsAvailable(false);
+                    missions[j].addSpacecraft(spacecrafts[i]);
+                    isOk = false;
+                    break;
+                }
+                if((j==missionSize - 1||missionSize==0) &&isOk){
+                    cout<< "Cannot assign spacecraft. Mission "<< missionName<<" does not exist."<< endl;
+                    isOk = false;
+                    break;
+                }
+            }
+        }
+        if(i==craftSize - 1 &&isOk) {
+            cout<< "Cannot assign spacecraft. Spacecraft "<< spacecraftName<<" does not exist."<< endl;
+            isOk = false;
+            break;
+        }
+    }
 }
 
 void SpaceMissionManagementSystem::dropSpacecraftFromMission(const string spacecraftName) {
