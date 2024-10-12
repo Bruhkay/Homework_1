@@ -25,25 +25,23 @@ SpaceMissionManagementSystem::~SpaceMissionManagementSystem() {
 }
 
 void SpaceMissionManagementSystem::addMission(const string name, const string launchDate, const string destination) {
-    bool isOk = true;
     for (int i = 0; i < missionSize; i++) {
         if (missions[i].getName() == name) {
             cout << "Cannot add mission. Mission " << name << " already exists." << endl;
-            isOk = false;
-            break;
+
+            return;
         }
     }
-    if (isOk) {
-        Mission *newArray = new Mission[missionSize + 1];
-        for (int j = 0; j < missionSize; ++j) {
-            newArray[j] = missions[j];
-        }
-        delete[] missions;
-        missions = newArray;
-        missionSize += 1;
-        missions[missionSize-1] = Mission(name, launchDate, destination);
-        cout << "Added mission " << name << "." << endl;
+    Mission *newArray = new Mission[missionSize + 1];
+    for (int j = 0; j < missionSize; ++j) {
+        newArray[j] = missions[j];
     }
+    delete[] missions;
+    missions = newArray;
+    missionSize += 1;
+    missions[missionSize-1] = Mission(name, launchDate, destination);
+    cout << "Added mission " << name << "." << endl;
+
 }
 
 void SpaceMissionManagementSystem::removeMission(const string name) {
