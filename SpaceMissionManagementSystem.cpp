@@ -16,8 +16,12 @@ SpaceMissionManagementSystem::SpaceMissionManagementSystem() {
 }
 
 SpaceMissionManagementSystem::~SpaceMissionManagementSystem() {
+    for(int i = 0; i< missionSize; i++) {
+        missions[i].remove();
+    }
     delete[] spacecrafts;
     delete[] missions;
+
 }
 
 void SpaceMissionManagementSystem::addMission(const string name, const string launchDate, const string destination) {

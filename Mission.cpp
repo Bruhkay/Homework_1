@@ -9,6 +9,9 @@ using namespace std;
 
 Mission::Mission() {
 }
+void Mission::remove() {
+    delete[] spacecrafts;
+}
 
 Mission::Mission(string nam, string dat, string destinatio) {
     name = nam;

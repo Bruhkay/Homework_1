@@ -11,6 +11,7 @@ using namespace std;
 class Mission {
 public:
     Mission();
+    void remove();
     Mission(string nam, string dat, string destinatio);
     string getName();
     string getDate();
