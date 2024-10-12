@@ -5,8 +5,6 @@
 #include "Mission.h"
 #include <iostream>
 
-#include <algorithm>
-#include <bits/ranges_algo.h>
 using namespace std;
 
 Mission::Mission() {
