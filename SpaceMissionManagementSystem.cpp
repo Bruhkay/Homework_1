@@ -28,7 +28,6 @@ void SpaceMissionManagementSystem::addMission(const string name, const string la
     for (int i = 0; i < missionSize; i++) {
         if (missions[i].getName() == name) {
             cout << "Cannot add mission. Mission " << name << " already exists." << endl;
-
             return;
         }
     }
@@ -159,7 +158,44 @@ void SpaceMissionManagementSystem::assignSpacecraftToMission(const string spacec
 }
 
 void SpaceMissionManagementSystem::dropSpacecraftFromMission(const string spacecraftName) {
-
+    bool isOk = true;
+    for(int i = 0; i<craftSize;i++) {
+        if(spacecrafts[i].getName() == spacecraftName&&isOk) {
+            if(!spacecrafts[i].getIsAvailable()) {
+                for (int k = 0; k<missionSize;k++) {
+                    for(int p = 0; p<missions[k].getCount(); p++) {
+                        if(missions[k].getSpacecrafts(p).getName() == spacecraftName) {
+                            //TODO u find the mission of this spacecraft use it
+                            break;
+                        }
+                    }
+                }
+                isOk = false;
+            }
+            else {
+                cout<< "Cannot drop spacecraft from mission. Spacecraft already available."<< endl;
+                isOk = false;
+            }
+            /*
+            for(int j = 0; j<missionSize && isOk;j++) {
+                if(missions[j].getName()==missionName) {
+                    spacecrafts[i].setIsAvailable(false);
+                    missions[j].addSpacecraft(spacecrafts[i]);
+                    isOk = false;
+                    break;
+                }
+                if((j==missionSize - 1||missionSize==0) &&isOk){
+                    cout<< "Cannot assign spacecraft. Mission "<< missionName<<" does not exist."<< endl;
+                    isOk = false;
+                    break;
+                }
+            }*/
+        }
+        if(i==craftSize - 1 &&isOk) {
+            cout<< "Cannot drop spacecraft from mission. Spacecraft "<< spacecraftName<<" does not exist."<< endl;
+            break;
+        }
+    }
 }
 
 void SpaceMissionManagementSystem::showAllMissions() const {
