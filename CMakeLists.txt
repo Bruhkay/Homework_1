@@ -9,4 +9,8 @@ add_executable(Homework_1 main.cpp
         Spacecraft.h
         Mission.h
         Mission.cpp
-        Spacecraft.cpp)
+        Spacecraft.cpp
+        main.cpp
+        main.cpp
+        main.cpp
+        main.cpp)

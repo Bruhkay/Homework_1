@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Homework_1.dir/main.cpp.o CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.o CMakeFiles/Homework_1.dir/Mission.cpp.o CMakeFiles/Homework_1.dir/Spacecraft.cpp.o -o Homework_1
