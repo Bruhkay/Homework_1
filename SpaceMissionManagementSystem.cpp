@@ -165,7 +165,8 @@ void SpaceMissionManagementSystem::dropSpacecraftFromMission(const string spacec
                 for (int k = 0; k<missionSize;k++) {
                     for(int p = 0; p<missions[k].getCount(); p++) {
                         if(missions[k].getSpacecrafts(p).getName() == spacecraftName) {
-                            //TODO u find the mission of this spacecraft use it
+                            spacecrafts[i].setIsAvailable(true);
+                            missions[k].removeSpacecraft(spacecrafts[i]);
                             break;
                         }
                     }

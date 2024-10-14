@@ -13,6 +13,7 @@ public:
     Mission();
     void remove();
     Spacecraft getSpacecrafts(int number);
+    void removeSpacecraft(Spacecraft& spacecraftToDrop);
     Mission(string nam, string dat, string destinatio);
     string getName();
     string getDate();

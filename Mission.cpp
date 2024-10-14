@@ -15,7 +15,24 @@ void Mission::remove() {
 Spacecraft Mission::getSpacecrafts(int number) {
     return spacecrafts[number];
 }
+void Mission::removeSpacecraft(Spacecraft& spacecraftToDrop) {
 
+    Spacecraft *newArray2 = new Spacecraft[craftSize - 1];
+    int k = 0;
+    for (int j = 0; j < craftSize; ++j) {
+        if(spacecrafts[j].getName() != spacecraftToDrop.getName()) {
+            newArray2[k] = spacecrafts[j];
+            k++;
+        }
+    }
+    delete[] spacecrafts;
+    spacecrafts = newArray2;
+    craftSize -= 1;
+    cout<< "original: "<<&spacecraftToDrop << endl;
+    cout<< "array: "<<&spacecrafts[craftSize-1] << endl; //TODO memory location ayni degil
+    cout << "Assigned spacecraft " << spacecraftToDrop.getName() <<" to mission "<< name<< "." << endl;
+
+}
 Mission::Mission(string nam, string dat, string destinatio) {
     name = nam;
     date = dat;
