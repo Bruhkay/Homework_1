@@ -28,8 +28,8 @@ void Mission::removeSpacecraft(Spacecraft& spacecraftToDrop) {
     delete[] spacecrafts;
     spacecrafts = newArray2;
     craftSize -= 1;
-    cout<< "original: "<<&spacecraftToDrop << endl;
-    cout<< "array: "<<&spacecrafts[craftSize-1] << endl; //TODO memory location ayni degil
+    //cout<< "original: "<<&spacecraftToDrop << endl;
+    //cout<< "array: "<<&spacecrafts[craftSize-1] << endl; //TODO memory location ayni degil
     cout << "Assigned spacecraft " << spacecraftToDrop.getName() <<" to mission "<< name<< "." << endl;
 
 }
