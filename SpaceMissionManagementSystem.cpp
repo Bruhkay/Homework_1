@@ -48,9 +48,6 @@ void SpaceMissionManagementSystem::removeMission(const string name) {
     for (int i = 0; i < missionSize; i++) {
         if (missions[i].getName() == name) {
             missions[i].setSpacecraftsAvailable();
-            //TODO
-            //i should create a new array and copy without this element
-
             Mission *newArray = new Mission[missionSize - 1];
             int k =0;
             for (int j = 0; j < missionSize; ++j) {
@@ -128,8 +125,16 @@ void SpaceMissionManagementSystem::assignSpacecraftToMission(const string spacec
     for(int i = 0; i<craftSize;i++) {
         if(spacecrafts[i].getName() == spacecraftName&&isOk) {
             if(!spacecrafts[i].getIsAvailable()) {
-                //TODO complete the cout
-                cout<<"Cannot assign spacecraft. Spacecraft "<< spacecraftName<<" is already assigned to mission"<< "." << endl;
+                string tempName = "Null";
+                for (int k = 0; k<missionSize;k++) {
+                    for(int p = 0; p<missions[k].getCount(); p++) {
+                        if(missions[k].getSpacecrafts(p).getName() == spacecraftName) {
+                            tempName = missions[k].getName();
+                            break;
+                        }
+                    }
+                }
+                cout<<"Cannot assign spacecraft. Spacecraft "<< spacecraftName<<" is already assigned to mission "<< tempName<< "." << endl;
                 isOk = false;
             }
             for(int j = 0; j<missionSize && isOk;j++) {
@@ -148,7 +153,6 @@ void SpaceMissionManagementSystem::assignSpacecraftToMission(const string spacec
         }
         if(i==craftSize - 1 &&isOk) {
             cout<< "Cannot assign spacecraft. Spacecraft "<< spacecraftName<<" does not exist."<< endl;
-            isOk = false;
             break;
         }
     }
