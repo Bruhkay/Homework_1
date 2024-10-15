@@ -12,16 +12,14 @@
 using namespace std;
 
 SpaceMissionManagementSystem::SpaceMissionManagementSystem() {
-
 }
 
 SpaceMissionManagementSystem::~SpaceMissionManagementSystem() {
-    for(int i = 0; i< missionSize; i++) {
+    for (int i = 0; i < missionSize; i++) {
         missions[i].remove();
     }
     delete[] spacecrafts;
     delete[] missions;
-
 }
 
 void SpaceMissionManagementSystem::addMission(const string name, const string launchDate, const string destination) {
@@ -38,9 +36,8 @@ void SpaceMissionManagementSystem::addMission(const string name, const string la
     delete[] missions;
     missions = newArray;
     missionSize += 1;
-    missions[missionSize-1] = Mission(name, launchDate, destination);
+    missions[missionSize - 1] = Mission(name, launchDate, destination);
     cout << "Added mission " << name << "." << endl;
-
 }
 
 void SpaceMissionManagementSystem::removeMission(const string name) {
@@ -48,9 +45,9 @@ void SpaceMissionManagementSystem::removeMission(const string name) {
         if (missions[i].getName() == name) {
             missions[i].setSpacecraftsAvailable();
             Mission *newArray = new Mission[missionSize - 1];
-            int k =0;
+            int k = 0;
             for (int j = 0; j < missionSize; ++j) {
-                if(missions[j].getName()!=name) {
+                if (missions[j].getName() != name) {
                     newArray[k] = missions[j];
                     k++;
                 }
@@ -61,7 +58,7 @@ void SpaceMissionManagementSystem::removeMission(const string name) {
             cout << "Removed mission " << name << "." << endl;
             break;
         }
-        if (i == missionSize - 1||missionSize==0) {
+        if (i == missionSize - 1 || missionSize == 0) {
             cout << "Cannot remove mission. Mission " << name << " does not exist." << endl;
             break;
         }
@@ -85,7 +82,7 @@ void SpaceMissionManagementSystem::addSpacecraft(const string name, const string
         delete[] spacecrafts;
         spacecrafts = newArray;
         craftSize += 1;
-        spacecrafts[craftSize-1] = Spacecraft(name, type);
+        spacecrafts[craftSize - 1] = Spacecraft(name, type);
         cout << "Added spacecraft " << name << "." << endl;
     }
 }
@@ -93,11 +90,11 @@ void SpaceMissionManagementSystem::addSpacecraft(const string name, const string
 void SpaceMissionManagementSystem::removeSpacecraft(const string name) {
     for (int i = 0; i < craftSize; i++) {
         if (spacecrafts[i].getName() == name) {
-            if(spacecrafts[i].getIsAvailable()) {
+            if (spacecrafts[i].getIsAvailable()) {
                 Spacecraft *newArray = new Spacecraft[craftSize - 1];
-                int k =0;
+                int k = 0;
                 for (int j = 0; j < craftSize; ++j) {
-                    if(spacecrafts[j].getName()!=name) {
+                    if (spacecrafts[j].getName() != name) {
                         newArray[k] = spacecrafts[j];
                         k++;
                     }
@@ -106,13 +103,12 @@ void SpaceMissionManagementSystem::removeSpacecraft(const string name) {
                 spacecrafts = newArray;
                 craftSize -= 1;
                 cout << "Removed spacecraft " << name << "." << endl;
-            }
-            else {
-                cout << "Cannot remove spacecraft. Spacecraft "<< name<<" is assigned to a mission. " << endl;
+            } else {
+                cout << "Cannot remove spacecraft. Spacecraft " << name << " is assigned to a mission. " << endl;
             }
             break;
         }
-        if (i == craftSize - 1||craftSize==0) {
+        if (i == craftSize - 1 || craftSize == 0) {
             cout << "Cannot remove spacecraft. Spacecraft " << name << " does not exist." << endl;
             break;
         }
@@ -121,37 +117,38 @@ void SpaceMissionManagementSystem::removeSpacecraft(const string name) {
 
 void SpaceMissionManagementSystem::assignSpacecraftToMission(const string spacecraftName, const string missionName) {
     bool isOk = true;
-    for(int i = 0; i<craftSize;i++) {
-        if(spacecrafts[i].getName() == spacecraftName&&isOk) {
-            if(!spacecrafts[i].getIsAvailable()) {
+    for (int i = 0; i < craftSize; i++) {
+        if (spacecrafts[i].getName() == spacecraftName && isOk) {
+            if (!spacecrafts[i].getIsAvailable()) {
                 string tempName = "Null";
-                for (int k = 0; k<missionSize;k++) {
-                    for(int p = 0; p<missions[k].getCount(); p++) {
-                        if(missions[k].getSpacecrafts(p).getName() == spacecraftName) {
+                for (int k = 0; k < missionSize; k++) {
+                    for (int p = 0; p < missions[k].getCount(); p++) {
+                        if (missions[k].getSpacecrafts(p).getName() == spacecraftName) {
                             tempName = missions[k].getName();
                             break;
                         }
                     }
                 }
-                cout<<"Cannot assign spacecraft. Spacecraft "<< spacecraftName<<" is already assigned to mission "<< tempName<< "." << endl;
+                cout << "Cannot assign spacecraft. Spacecraft " << spacecraftName << " is already assigned to mission "
+                        << tempName << "." << endl;
                 isOk = false;
             }
-            for(int j = 0; j<missionSize && isOk;j++) {
-                if(missions[j].getName()==missionName) {
+            for (int j = 0; j < missionSize && isOk; j++) {
+                if (missions[j].getName() == missionName) {
                     spacecrafts[i].setIsAvailable(false);
                     missions[j].addSpacecraft(spacecrafts[i]);
                     isOk = false;
                     break;
                 }
-                if((j==missionSize - 1||missionSize==0) &&isOk){
-                    cout<< "Cannot assign spacecraft. Mission "<< missionName<<" does not exist."<< endl;
+                if ((j == missionSize - 1 || missionSize == 0) && isOk) {
+                    cout << "Cannot assign spacecraft. Mission " << missionName << " does not exist." << endl;
                     isOk = false;
                     break;
                 }
             }
         }
-        if(i==craftSize - 1 &&isOk) {
-            cout<< "Cannot assign spacecraft. Spacecraft "<< spacecraftName<<" does not exist."<< endl;
+        if (i == craftSize - 1 && isOk) {
+            cout << "Cannot assign spacecraft. Spacecraft " << spacecraftName << " does not exist." << endl;
             break;
         }
     }
@@ -159,12 +156,12 @@ void SpaceMissionManagementSystem::assignSpacecraftToMission(const string spacec
 
 void SpaceMissionManagementSystem::dropSpacecraftFromMission(const string spacecraftName) {
     bool isOk = true;
-    for(int i = 0; i<craftSize;i++) {
-        if(spacecrafts[i].getName() == spacecraftName&&isOk) {
-            if(!spacecrafts[i].getIsAvailable()) {
-                for (int k = 0; k<missionSize;k++) {
-                    for(int p = 0; p<missions[k].getCount(); p++) {
-                        if(missions[k].getSpacecrafts(p).getName() == spacecraftName) {
+    for (int i = 0; i < craftSize; i++) {
+        if (spacecrafts[i].getName() == spacecraftName && isOk) {
+            if (!spacecrafts[i].getIsAvailable()) {
+                for (int k = 0; k < missionSize; k++) {
+                    for (int p = 0; p < missions[k].getCount(); p++) {
+                        if (missions[k].getSpacecrafts(p).getName() == spacecraftName) {
                             spacecrafts[i].setIsAvailable(true);
                             missions[k].removeSpacecraft(spacecrafts[i]);
                             break;
@@ -172,9 +169,8 @@ void SpaceMissionManagementSystem::dropSpacecraftFromMission(const string spacec
                     }
                 }
                 isOk = false;
-            }
-            else {
-                cout<< "Cannot drop spacecraft from mission. Spacecraft already available."<< endl;
+            } else {
+                cout << "Cannot drop spacecraft from mission. Spacecraft already available." << endl;
                 isOk = false;
             }
             /*
@@ -192,8 +188,8 @@ void SpaceMissionManagementSystem::dropSpacecraftFromMission(const string spacec
                 }
             }*/
         }
-        if(i==craftSize - 1 &&isOk) {
-            cout<< "Cannot drop spacecraft from mission. Spacecraft "<< spacecraftName<<" does not exist."<< endl;
+        if (i == craftSize - 1 && isOk) {
+            cout << "Cannot drop spacecraft from mission. Spacecraft " << spacecraftName << " does not exist." << endl;
             break;
         }
     }
@@ -213,7 +209,8 @@ void SpaceMissionManagementSystem::showAllMissions() const {
         for (int i = 0; i < missionSize; i++) {
             if (!missions[i].getName().empty()) {
                 cout << "Mission: " << missions[i].getName() << ", Launch Date: " << missions[i].getDate() <<
-                        ", Destination: " << missions[i].getDestination()<< ", Assigned Spacecraft Count: " << missions[i].getCount() << endl;
+                        ", Destination: " << missions[i].getDestination() << ", Assigned Spacecraft Count: " << missions
+                        [i].getCount() << endl;
             }
         }
     }
@@ -241,36 +238,36 @@ void SpaceMissionManagementSystem::showAllSpacecrafts() const {
 }
 
 void SpaceMissionManagementSystem::showMission(const string name) const {
-    for(int i = 0; i<missionSize;i++) {
-        if(missions[i].getName() == name) {
+    for (int i = 0; i < missionSize; i++) {
+        if (missions[i].getName() == name) {
             cout << "Mission: " << name << endl;
-            cout << "  Name: "<< missions[i].getName()<< endl;
-            cout << "  Launch Date: "<< missions[i].getDate()<< endl;
-            cout << "  Destination: "<< missions[i].getDestination()<< endl;
+            cout << "  Name: " << missions[i].getName() << endl;
+            cout << "  Launch Date: " << missions[i].getDate() << endl;
+            cout << "  Destination: " << missions[i].getDestination() << endl;
             cout << "  Assigned Spacecrafts:" << endl;
-            if(missions[i].getCount() ==0) {
+            if (missions[i].getCount() == 0) {
                 cout << "    None" << endl;
             }
-            for(int j = 0; j<missions[i].getCount();j++) {
-                cout<<"  - "<<missions[i].getSpacecrafts(j).getName()<<endl;
+            for (int j = 0; j < missions[i].getCount(); j++) {
+                cout << "  - " << missions[i].getSpacecrafts(j).getName() << endl;
             }
         }
-        if(i==missionSize - 1) {
-            cout << "Cannot show mission. Mission "<< name<<" does not exist." << endl;
+        if (i == missionSize - 1) {
+            cout << "Cannot show mission. Mission " << name << " does not exist." << endl;
         }
     }
-    if(missionSize == 0) {
+    if (missionSize == 0) {
         cout << "Cannot show mission. There is no mission on the system." << endl;
     }
 }
 
 void SpaceMissionManagementSystem::showSpacecraft(const string name) const {
-    if(craftSize==0) {
-        cout<< "There is no spacecraft in the system."<< endl;
+    if (craftSize == 0) {
+        cout << "There is no spacecraft in the system." << endl;
         return;
     }
     for (int i = 0; i < craftSize; i++) {
-        if (spacecrafts[i].getName()==name) {
+        if (spacecrafts[i].getName() == name) {
             cout << "Spacecraft: " << spacecrafts[i].getName() << ", Type: " << spacecrafts[i].getType() <<
                     ", Status: " <<
                     (spacecrafts[i].getIsAvailable() ? "Available" : "Assigned") << endl;
