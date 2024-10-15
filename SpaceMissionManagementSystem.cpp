@@ -213,8 +213,7 @@ void SpaceMissionManagementSystem::showAllMissions() const {
         for (int i = 0; i < missionSize; i++) {
             if (!missions[i].getName().empty()) {
                 cout << "Mission: " << missions[i].getName() << ", Launch Date: " << missions[i].getDate() <<
-                        ", Destination: " <<
-                        ", Assigned Spacecraft Count: " << missions[i].getCount() << endl;
+                        ", Destination: " << missions[i].getDestination()<< ", Assigned Spacecraft Count: " << missions[i].getCount() << endl;
             }
         }
     }
