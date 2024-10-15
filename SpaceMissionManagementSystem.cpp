@@ -213,8 +213,7 @@ void SpaceMissionManagementSystem::showAllMissions() const {
         for (int i = 0; i < missionSize; i++) {
             if (!missions[i].getName().empty()) {
                 cout << "Mission: " << missions[i].getName() << ", Launch Date: " << missions[i].getDate() <<
-                        ", Destination: " <<
-                        ", Assigned Spacecraft Count: " << missions[i].getCount() << endl;
+                        ", Destination: " << missions[i].getDestination()<< ", Assigned Spacecraft Count: " << missions[i].getCount() << endl;
             }
         }
     }
@@ -248,10 +247,12 @@ void SpaceMissionManagementSystem::showMission(const string name) const {
             cout << "  Name: "<< missions[i].getName()<< endl;
             cout << "  Launch Date: "<< missions[i].getDate()<< endl;
             cout << "  Destination: "<< missions[i].getDestination()<< endl;
-            cout << "  Assigned Spacecraft:" << endl;
+            cout << "  Assigned Spacecrafts:" << endl;
+            if(missions[i].getCount() ==0) {
+                cout << "    None" << endl;
+            }
             for(int j = 0; j<missions[i].getCount();j++) {
                 cout<<"  - "<<missions[i].getSpacecrafts(j).getName()<<endl;
-                // TODO should print none in case
             }
         }
         if(i==missionSize - 1) {

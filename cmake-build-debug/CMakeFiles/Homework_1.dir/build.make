@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/bc/fsf12nxs6xq1cyq9x757zxn80000gn/T/AppTranslocation/8989060E-1C91-49E9-9A2C-D8F404BAB360/d/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/bc/fsf12nxs6xq1cyq9x757zxn80000gn/T/AppTranslocation/8989060E-1C91-49E9-9A2C-D8F404BAB360/d/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -73,57 +73,57 @@ CMakeFiles/Homework_1.dir/main.cpp.o: CMakeFiles/Homework_1.dir/flags.make
 CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cpp
 CMakeFiles/Homework_1.dir/main.cpp.o: CMakeFiles/Homework_1.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/burkay/Documents/Homework_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Homework_1.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Homework_1.dir/main.cpp.o -MF CMakeFiles/Homework_1.dir/main.cpp.o.d -o CMakeFiles/Homework_1.dir/main.cpp.o -c /Users/burkay/Documents/Homework_1/main.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Homework_1.dir/main.cpp.o -MF CMakeFiles/Homework_1.dir/main.cpp.o.d -o CMakeFiles/Homework_1.dir/main.cpp.o -c /Users/burkay/Documents/Homework_1/main.cpp
 
 CMakeFiles/Homework_1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Homework_1.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/burkay/Documents/Homework_1/main.cpp > CMakeFiles/Homework_1.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/burkay/Documents/Homework_1/main.cpp > CMakeFiles/Homework_1.dir/main.cpp.i
 
 CMakeFiles/Homework_1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Homework_1.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/burkay/Documents/Homework_1/main.cpp -o CMakeFiles/Homework_1.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/burkay/Documents/Homework_1/main.cpp -o CMakeFiles/Homework_1.dir/main.cpp.s
 
 CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.o: CMakeFiles/Homework_1.dir/flags.make
 CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.o: /Users/burkay/Documents/Homework_1/SpaceMissionManagementSystem.cpp
 CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.o: CMakeFiles/Homework_1.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/burkay/Documents/Homework_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.o -MF CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.o.d -o CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.o -c /Users/burkay/Documents/Homework_1/SpaceMissionManagementSystem.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.o -MF CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.o.d -o CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.o -c /Users/burkay/Documents/Homework_1/SpaceMissionManagementSystem.cpp
 
 CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/burkay/Documents/Homework_1/SpaceMissionManagementSystem.cpp > CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/burkay/Documents/Homework_1/SpaceMissionManagementSystem.cpp > CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.i
 
 CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/burkay/Documents/Homework_1/SpaceMissionManagementSystem.cpp -o CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/burkay/Documents/Homework_1/SpaceMissionManagementSystem.cpp -o CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.s
 
 CMakeFiles/Homework_1.dir/Mission.cpp.o: CMakeFiles/Homework_1.dir/flags.make
 CMakeFiles/Homework_1.dir/Mission.cpp.o: /Users/burkay/Documents/Homework_1/Mission.cpp
 CMakeFiles/Homework_1.dir/Mission.cpp.o: CMakeFiles/Homework_1.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/burkay/Documents/Homework_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Homework_1.dir/Mission.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Homework_1.dir/Mission.cpp.o -MF CMakeFiles/Homework_1.dir/Mission.cpp.o.d -o CMakeFiles/Homework_1.dir/Mission.cpp.o -c /Users/burkay/Documents/Homework_1/Mission.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Homework_1.dir/Mission.cpp.o -MF CMakeFiles/Homework_1.dir/Mission.cpp.o.d -o CMakeFiles/Homework_1.dir/Mission.cpp.o -c /Users/burkay/Documents/Homework_1/Mission.cpp
 
 CMakeFiles/Homework_1.dir/Mission.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Homework_1.dir/Mission.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/burkay/Documents/Homework_1/Mission.cpp > CMakeFiles/Homework_1.dir/Mission.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/burkay/Documents/Homework_1/Mission.cpp > CMakeFiles/Homework_1.dir/Mission.cpp.i
 
 CMakeFiles/Homework_1.dir/Mission.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Homework_1.dir/Mission.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/burkay/Documents/Homework_1/Mission.cpp -o CMakeFiles/Homework_1.dir/Mission.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/burkay/Documents/Homework_1/Mission.cpp -o CMakeFiles/Homework_1.dir/Mission.cpp.s
 
 CMakeFiles/Homework_1.dir/Spacecraft.cpp.o: CMakeFiles/Homework_1.dir/flags.make
 CMakeFiles/Homework_1.dir/Spacecraft.cpp.o: /Users/burkay/Documents/Homework_1/Spacecraft.cpp
 CMakeFiles/Homework_1.dir/Spacecraft.cpp.o: CMakeFiles/Homework_1.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/burkay/Documents/Homework_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Homework_1.dir/Spacecraft.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Homework_1.dir/Spacecraft.cpp.o -MF CMakeFiles/Homework_1.dir/Spacecraft.cpp.o.d -o CMakeFiles/Homework_1.dir/Spacecraft.cpp.o -c /Users/burkay/Documents/Homework_1/Spacecraft.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Homework_1.dir/Spacecraft.cpp.o -MF CMakeFiles/Homework_1.dir/Spacecraft.cpp.o.d -o CMakeFiles/Homework_1.dir/Spacecraft.cpp.o -c /Users/burkay/Documents/Homework_1/Spacecraft.cpp
 
 CMakeFiles/Homework_1.dir/Spacecraft.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Homework_1.dir/Spacecraft.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/burkay/Documents/Homework_1/Spacecraft.cpp > CMakeFiles/Homework_1.dir/Spacecraft.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/burkay/Documents/Homework_1/Spacecraft.cpp > CMakeFiles/Homework_1.dir/Spacecraft.cpp.i
 
 CMakeFiles/Homework_1.dir/Spacecraft.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Homework_1.dir/Spacecraft.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/burkay/Documents/Homework_1/Spacecraft.cpp -o CMakeFiles/Homework_1.dir/Spacecraft.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/burkay/Documents/Homework_1/Spacecraft.cpp -o CMakeFiles/Homework_1.dir/Spacecraft.cpp.s
 
 # Object files for target Homework_1
 Homework_1_OBJECTS = \

@@ -10,7 +10,8 @@
 				{
 					"includeDirectories" : 
 					[
-						"/usr/include"
+						"/usr/include",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include"
 					],
 					"linkDirectories" : 
 					[
@@ -23,7 +24,7 @@
 					],
 					"linkLibraries" : []
 				},
-				"path" : "/usr/bin/cc",
+				"path" : "/Library/Developer/CommandLineTools/usr/bin/cc",
 				"version" : "15.0.0.15000309"
 			},
 			"language" : "C",
@@ -41,7 +42,8 @@
 				{
 					"includeDirectories" : 
 					[
-						"/usr/include"
+						"/usr/include",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include"
 					],
 					"linkDirectories" : 
 					[
@@ -54,7 +56,7 @@
 					],
 					"linkLibraries" : []
 				},
-				"path" : "/usr/bin/c++",
+				"path" : "/Library/Developer/CommandLineTools/usr/bin/c++",
 				"version" : "15.0.0.15000309"
 			},
 			"language" : "CXX",
