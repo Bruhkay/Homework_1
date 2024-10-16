@@ -939,11 +939,25 @@ CMakeFiles/Homework_1.dir/Mission.cpp.o: /Users/burkay/Documents/Homework_1/Miss
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/xlocale/_wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/xlocale/_wctype.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg___gnuc_va_list.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg___va_copy.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_header_macro.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_arg.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_copy.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_list.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_header_macro.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_max_align_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_null.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_nullptr_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_offsetof.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_ptrdiff_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_rsize_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_size_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_wchar_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/limits.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   /Users/burkay/Documents/Homework_1/Mission.h \
   /Users/burkay/Documents/Homework_1/Spacecraft.h
 
@@ -1885,11 +1899,25 @@ CMakeFiles/Homework_1.dir/SpaceMissionManagementSystem.cpp.o: /Users/burkay/Docu
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/xlocale/_wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/xlocale/_wctype.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg___gnuc_va_list.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg___va_copy.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_header_macro.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_arg.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_copy.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_list.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_header_macro.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_max_align_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_null.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_nullptr_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_offsetof.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_ptrdiff_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_rsize_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_size_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_wchar_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/limits.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   /Users/burkay/Documents/Homework_1/Mission.h \
   /Users/burkay/Documents/Homework_1/SpaceMissionManagementSystem.h \
   /Users/burkay/Documents/Homework_1/Spacecraft.h
@@ -2686,11 +2714,25 @@ CMakeFiles/Homework_1.dir/Spacecraft.cpp.o: /Users/burkay/Documents/Homework_1/S
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/wctype.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg___gnuc_va_list.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg___va_copy.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_header_macro.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_arg.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_copy.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_list.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_header_macro.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_max_align_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_null.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_nullptr_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_offsetof.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_ptrdiff_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_rsize_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_size_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_wchar_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/limits.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   /Users/burkay/Documents/Homework_1/Spacecraft.h
 
 CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cpp \
@@ -3631,11 +3673,25 @@ CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cp
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/xlocale/_wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/xlocale/_wctype.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg___gnuc_va_list.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg___va_copy.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_header_macro.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_arg.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_copy.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_list.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_header_macro.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_max_align_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_null.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_nullptr_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_offsetof.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_ptrdiff_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_rsize_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_size_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_wchar_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/limits.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   /Users/burkay/Documents/Homework_1/Mission.h \
   /Users/burkay/Documents/Homework_1/SpaceMissionManagementSystem.h \
   /Users/burkay/Documents/Homework_1/Spacecraft.h
@@ -3645,11 +3701,25 @@ CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cp
 
 /Users/burkay/Documents/Homework_1/SpaceMissionManagementSystem.cpp:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/limits.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_rsize_t.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_ptrdiff_t.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_offsetof.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_nullptr_t.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_copy.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_arg.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg___va_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/xlocale/_wchar.h:
 
@@ -3689,9 +3759,9 @@ CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cp
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_uintptr_t.h:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_ucontext.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_header_macro.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_u_short.h:
 
@@ -4061,6 +4131,8 @@ CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cp
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__type_traits/is_member_object_pointer.h:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_header_macro.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__type_traits/is_member_function_pointer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__algorithm/mismatch.h:
@@ -4233,6 +4305,8 @@ CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cp
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__ranges/size.h:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_list.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/AvailabilityInternal.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__ranges/movable_box.h:
@@ -4260,6 +4334,8 @@ CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cp
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__memory/voidify.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_max_align_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__memory/uses_allocator_construction.h:
 
@@ -4777,6 +4853,8 @@ CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cp
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__algorithm/ranges_push_heap.h:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__algorithm/ranges_max_element.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__type_traits/add_cv.h:
@@ -4997,6 +5075,8 @@ CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cp
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__algorithm/ranges_partition.h:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_null.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__algorithm/ranges_equal.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/AvailabilityInternalLegacy.h:
@@ -5140,6 +5220,8 @@ CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cp
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__algorithm/ranges_find_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/stdio.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_size_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__type_traits/conditional.h:
 
@@ -5297,6 +5379,8 @@ CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cp
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/memory:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg___gnuc_va_list.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__math/gamma.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__algorithm/fill.h:
@@ -5342,6 +5426,8 @@ CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cp
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__algorithm/for_each_n.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__type_traits/is_trivially_default_constructible.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_wchar_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__algorithm/count_if.h:
 
@@ -5508,8 +5594,6 @@ CMakeFiles/Homework_1.dir/main.cpp.o: /Users/burkay/Documents/Homework_1/main.cp
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_types/_uint8_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__atomic/atomic_base.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_strings.h:
 
