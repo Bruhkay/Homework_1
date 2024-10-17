@@ -240,7 +240,7 @@ void SpaceMissionManagementSystem::showAllSpacecrafts() const {
 void SpaceMissionManagementSystem::showMission(const string name) const {
     for (int i = 0; i < missionSize; i++) {
         if (missions[i].getName() == name) {
-            cout << "Mission: " << name << endl;
+            cout << "Mission: " << endl;
             cout << "  Name: " << missions[i].getName() << endl;
             cout << "  Launch Date: " << missions[i].getDate() << endl;
             cout << "  Destination: " << missions[i].getDestination() << endl;

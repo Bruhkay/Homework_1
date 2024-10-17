@@ -77,6 +77,7 @@ void Mission::addSpacecraft(Spacecraft& spacecraft) {
         }
         delete[] spacecrafts;
         spacecrafts = newArray;
+
         craftSize += 1;
         spacecrafts[craftSize-1] = spacecraft;
         cout<< "original: "<<&spacecraft << endl;
