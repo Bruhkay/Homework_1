@@ -104,7 +104,7 @@ void SpaceMissionManagementSystem::removeSpacecraft(const string name) {
                 craftSize -= 1;
                 cout << "Removed spacecraft " << name << "." << endl;
             } else {
-                cout << "Cannot remove spacecraft. Spacecraft " << name << " is assigned to a mission. " << endl;
+                cout << "Cannot remove spacecraft. Spacecraft " << name << " is assigned to a mission." << endl;
             }
             break;
         }
@@ -189,7 +189,7 @@ void SpaceMissionManagementSystem::dropSpacecraftFromMission(const string spacec
             }*/
         }
         if (i == craftSize - 1 && isOk) {
-            cout << "Cannot drop spacecraft from mission. Spacecraft " << spacecraftName << " does not exist." << endl;
+            cout << "Cannot drop spacecraft. Spacecraft " << spacecraftName << " does not exist." << endl;
             break;
         }
     }
@@ -240,7 +240,7 @@ void SpaceMissionManagementSystem::showAllSpacecrafts() const {
 void SpaceMissionManagementSystem::showMission(const string name) const {
     for (int i = 0; i < missionSize; i++) {
         if (missions[i].getName() == name) {
-            cout << "Mission: " << endl;
+            cout << "Mission:" << endl;
             cout << "  Name: " << missions[i].getName() << endl;
             cout << "  Launch Date: " << missions[i].getDate() << endl;
             cout << "  Destination: " << missions[i].getDestination() << endl;
