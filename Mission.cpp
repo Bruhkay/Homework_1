@@ -11,6 +11,7 @@ Mission::Mission() {
 }
 void Mission::remove() {
     delete[] spacecrafts;
+    spacecrafts = nullptr;
 }
 Spacecraft Mission::getSpacecrafts(int number) {
     return spacecrafts[number];
