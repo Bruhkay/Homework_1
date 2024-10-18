@@ -18,10 +18,8 @@ SpaceMissionManagementSystem::~SpaceMissionManagementSystem() {
     for (int i = 0; i < missionSize; i++) {
         missions[i].remove();
     }
-
-    if(missions) {
-        delete[] missions;
-    }
+    delete[] missions;
+    delete[] spacecrafts;
     spacecrafts = nullptr;
     missions = nullptr;
 }
