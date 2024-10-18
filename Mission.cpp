@@ -71,12 +71,12 @@ void Mission::addSpacecraft(Spacecraft& spacecraft) {
         }
     }
     if (isOk) {
-        Spacecraft* newArray;
-        newArray = &spacecraft;
+        Spacecraft *newArray = new Spacecraft[craftSize + 1];
+        for (int j = 0; j < craftSize; ++j) {
+            newArray[j] = spacecrafts[j];
+        }
         delete[] spacecrafts;
-
         spacecrafts = newArray;
-
 
         craftSize += 1;
         spacecrafts[craftSize-1] = spacecraft;
