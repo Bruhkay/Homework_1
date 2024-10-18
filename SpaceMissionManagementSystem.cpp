@@ -51,6 +51,10 @@ void SpaceMissionManagementSystem::removeMission(const string name) {
                     newArray[k] = missions[j];
                     k++;
                 }
+                else {
+                    missions[j].setSpacecraftsAvailable();
+                    //TODO you should set available the main spaceships
+                }
             }
             delete[] missions;
             missions = newArray;
@@ -251,6 +255,7 @@ void SpaceMissionManagementSystem::showMission(const string name) const {
             for (int j = 0; j < missions[i].getCount(); j++) {
                 cout << "  - " << missions[i].getSpacecrafts(j).getName() << endl;
             }
+            break;
         }
         if (i == missionSize - 1) {
             cout << "Cannot show mission. Mission " << name << " does not exist." << endl;
@@ -271,6 +276,10 @@ void SpaceMissionManagementSystem::showSpacecraft(const string name) const {
             cout << "Spacecraft: " << spacecrafts[i].getName() << ", Type: " << spacecrafts[i].getType() <<
                     ", Status: " <<
                     (spacecrafts[i].getIsAvailable() ? "Available" : "Assigned") << endl;
+            break;
+        }
+        if(i == craftSize - 1) {
+            cout << "Cannot show spacecraft. Spacecraft " <<name <<" does not exist." << endl;
         }
     }
 }
