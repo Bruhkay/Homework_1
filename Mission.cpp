@@ -31,7 +31,6 @@ void Mission::removeSpacecraft(Spacecraft& spacecraftToDrop) {
     craftSize -= 1;
     //cout<< "original: "<<&spacecraftToDrop << endl;
     //cout<< "array: "<<&spacecrafts[craftSize-1] << endl; //TODO memory location ayni degil
-    cout << "Assigned spacecraft " << spacecraftToDrop.getName() <<" to mission "<< name<< "." << endl;
 
 }
 Mission::Mission(string nam, string dat, string destinatio) {
@@ -81,8 +80,8 @@ void Mission::addSpacecraft(Spacecraft& spacecraft) {
 
         craftSize += 1;
         spacecrafts[craftSize-1] = spacecraft;
-        cout<< "original: "<<&spacecraft << endl;
-        cout<< "array: "<<&spacecrafts[craftSize-1] << endl; //TODO memory location ayni degil
+        //cout<< "original: "<<&spacecraft << endl;
+        //cout<< "array: "<<&spacecrafts[craftSize-1] << endl; //TODO memory location ayni degil
         cout << "Assigned spacecraft " << spacecraft.getName() <<" to mission "<< name<< "." << endl;
     }
 }
