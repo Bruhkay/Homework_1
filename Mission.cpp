@@ -11,6 +11,7 @@ Mission::Mission() {
 }
 void Mission::remove() {
     delete[] spacecrafts;
+    spacecrafts = nullptr;
 }
 Spacecraft Mission::getSpacecrafts(int number) {
     return spacecrafts[number];
@@ -71,12 +72,12 @@ void Mission::addSpacecraft(Spacecraft& spacecraft) {
         }
     }
     if (isOk) {
-        Spacecraft *newArray = new Spacecraft[craftSize + 1];
-        for (int j = 0; j < craftSize; ++j) {
-            newArray[j] = spacecrafts[j];
-        }
+        Spacecraft* newArray;
+        newArray = &spacecraft;
         delete[] spacecrafts;
+
         spacecrafts = newArray;
+
 
         craftSize += 1;
         spacecrafts[craftSize-1] = spacecraft;
