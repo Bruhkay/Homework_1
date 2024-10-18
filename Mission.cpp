@@ -29,9 +29,29 @@ void Mission::removeSpacecraft(Spacecraft& spacecraftToDrop) {
     delete[] spacecrafts;
     spacecrafts = newArray2;
     craftSize -= 1;
-    //cout<< "original: "<<&spacecraftToDrop << endl;
-    //cout<< "array: "<<&spacecrafts[craftSize-1] << endl; //TODO memory location ayni degil
 
+}
+void Mission::addSpacecraft(Spacecraft& spacecraft) {
+    bool isOk = true;
+    for (int i = 0; i < craftSize; i++) {
+        if (spacecrafts[i].getName() == spacecraft.getName()) {
+            cout << "Cannot add spacecraft. Spacecraft " << spacecraft.getName() << " already exists." << endl;
+            isOk = false;
+            break;
+        }
+    }
+    if (isOk) {
+        Spacecraft *newArray = new Spacecraft[craftSize + 1];
+        for (int j = 0; j < craftSize; ++j) {
+            newArray[j] = spacecrafts[j];
+        }
+        delete[] spacecrafts;
+        spacecrafts = newArray;
+
+        craftSize += 1;
+        spacecrafts[craftSize-1] = spacecraft;
+        cout << "Assigned spacecraft " << spacecraft.getName() <<" to mission "<< name<< "." << endl;
+    }
 }
 Mission::Mission(string nam, string dat, string destinatio) {
     name = nam;
@@ -59,30 +79,6 @@ int Mission::getCount() {
 void Mission::setSpacecraftsAvailable() {
     for (int i = 0; i < craftSize; i++) {
         spacecrafts[i].setIsAvailable(true);
-    }
-}
-void Mission::addSpacecraft(Spacecraft& spacecraft) {
-    bool isOk = true;
-    for (int i = 0; i < craftSize; i++) {
-        if (spacecrafts[i].getName() == spacecraft.getName()) {
-            cout << "Cannot add spacecraft. Spacecraft " << spacecraft.getName() << " already exists." << endl;
-            isOk = false;
-            break;
-        }
-    }
-    if (isOk) {
-        Spacecraft *newArray = new Spacecraft[craftSize + 1];
-        for (int j = 0; j < craftSize; ++j) {
-            newArray[j] = spacecrafts[j];
-        }
-        delete[] spacecrafts;
-        spacecrafts = newArray;
-
-        craftSize += 1;
-        spacecrafts[craftSize-1] = spacecraft;
-        //cout<< "original: "<<&spacecraft << endl;
-        //cout<< "array: "<<&spacecrafts[craftSize-1] << endl; //TODO memory location ayni degil
-        cout << "Assigned spacecraft " << spacecraft.getName() <<" to mission "<< name<< "." << endl;
     }
 }
 
