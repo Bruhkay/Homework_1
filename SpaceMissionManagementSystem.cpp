@@ -55,7 +55,6 @@ void SpaceMissionManagementSystem::removeMission(const string name) {
                 }
                 else {
                     missions[j].setSpacecraftsAvailable();
-                    //TODO you should set available the main spaceships
                     for (int l = 0; l < craftSize; ++l) {
                         for (int m = 0; m < missions[j].getCount(); ++m) {
                             if (spacecrafts[l].getName() == missions[j].getSpacecrafts(m).getName()) {
@@ -189,20 +188,6 @@ void SpaceMissionManagementSystem::dropSpacecraftFromMission(const string spacec
                 cout << "Cannot drop spacecraft. Spacecraft "<< spacecraftName<<" is not assigned to any mission." << endl;
                 isOk = false;
             }
-            /*
-            for(int j = 0; j<missionSize && isOk;j++) {
-                if(missions[j].getName()==missionName) {
-                    spacecrafts[i].setIsAvailable(false);
-                    missions[j].addSpacecraft(spacecrafts[i]);
-                    isOk = false;
-                    break;
-                }
-                if((j==missionSize - 1||missionSize==0) &&isOk){
-                    cout<< "Cannot assign spacecraft. Mission "<< missionName<<" does not exist."<< endl;
-                    isOk = false;
-                    break;
-                }
-            }*/
         }
         if (i == craftSize - 1 && isOk) {
             cout << "Cannot drop spacecraft. Spacecraft " << spacecraftName << " does not exist." << endl;
