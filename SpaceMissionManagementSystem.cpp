@@ -63,7 +63,9 @@ void SpaceMissionManagementSystem::removeMission(const string name) {
                             }
                         }
                     }
+                    missions[j].remove();
                 }
+
             }
             delete[] missions;
             missions = newArray;
